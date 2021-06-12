@@ -5,8 +5,6 @@ stages:
 install-dependencies:
   stage: install
   script:
-     - apt update && apt-get python make g++
-     - apt-get nodejs npm
      - npm install
   artifacts:
     expire_in: 1hr
